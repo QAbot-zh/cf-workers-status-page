@@ -37,3 +37,9 @@ monitors:
     url: 'https://blog.cloudflare.com/'
     method: GET
     expectStatus: 200
+
+  - id: one-api-ali-com
+    name: The oneapi server deploy on Ali
+    url: 'https://one.ai-october.win/'
+    method: GET
+    expectStatus: 200
