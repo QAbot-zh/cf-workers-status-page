@@ -15,14 +15,14 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+  # - id: workers-cloudflare-com # unique identifier
+  #   name: workers.cloudflare.com
+  #   description: 'You write code. They handle the rest.' # default=empty
+  #   url: 'https://workers.cloudflare.com/' # URL to fetch
+  #   method: GET # default=GET
+  #   expectStatus: 200 # operational status, default=200
+  #   followRedirect: false # should fetch follow redirects, default=false
+  #   linkable: false # allows the title to be a link, default=true
 
   - id: www-cloudflare-com
     name: www.cloudflare.com
@@ -30,16 +30,27 @@ monitors:
     url: 'https://www.cloudflare.com'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: linux.do
+    name: The Linux.do forum
+    url: 'https://linux.do/'
     method: GET
     expectStatus: 200
 
   - id: one-api-ali-com
-    name: The oneapi server deploy on Ali
+    name: The oneapi server (ali)
     url: 'https://one.ai-october.win/'
+    method: GET
+    expectStatus: 200
+
+  - id: one-api-aws
+    name: The oneapi server (aws)
+    url: 'https://oneapi.ai-october.xyz/'
+    method: GET
+    expectStatus: 200
+
+  - id: new-api-aws
+    name: The new server (aws)
+    url: 'https://new.ai-october.xyz/'
     method: GET
     expectStatus: 200
